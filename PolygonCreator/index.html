@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Polygon Creator</title>
+  <meta name="description" content="polygon">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+
+</head>
+
+<body onload = "updateDisplay()">
+  <h1>Polygon Creator</h1>
+  <div id = "text">
+  <p id = "type">type: </p>
+  <p id = "sides">sides: </p>
+  <p id = "area">area: </p>
+  <p id = "anglesum">sum of interior angles: </p>
+  <p id = "diagonalnum">number of diagonals: </p>
+  <p id = "info">click r to reset, click b to remove last point</p>
+  <p id = "moreinfo">you can also drag the dots</p>
+</div>
+  <canvas id="canvas" width="500" height="500" style="border:1px solid #000000;" onclick = "addDot(event)">
+
+</canvas>
+
+</body>
+</html>
